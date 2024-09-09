@@ -1,12 +1,29 @@
+import Account from "./components/account";
+import Cart from "./components/cart";
+import Checkout from "./components/checkout";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import Item from "./components/item";
+import Items from "./components/items";
+import Login from "./components/login";
+
 function App() {
   return (
     <>
-      <div className="flex justify-center items-center h-screen flex-col">
-        <h1 className="text-3xl font-bold underline text-red-500 ">
-          Shamazon 2.0
-        </h1>
-        <p className="text-2xl">This time it's typesafe!</p>
-      </div>
+      <Header />
+
+      <Items />
+      <Item />
+
+      {/* Cart and Checkout components */}
+      <Cart />
+      <Checkout />
+
+      {/* Login portal, Will it use Django or firebase like last time. Only time will tell */}
+      <Account />
+      <Login />
+
+      <Footer />
     </>
   );
 }
