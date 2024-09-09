@@ -22,7 +22,7 @@ function Nav() {
             {location.pathname === `/${category.toLowerCase()}` && (
               <motion.div
                 layoutId="underline"
-                className="bg-accent h-1 absolute bottom-1 left-0 right-0"
+                className="bg-accent h-0.5 absolute bottom-1 left-0 right-0"
               />
             )}
 

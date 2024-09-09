@@ -12,7 +12,10 @@ function App() {
     <>
       <Header />
 
+      {/* A list of items on a page view */}
       <Items />
+
+      {/* A single item on a page view */}
       <Item />
 
       {/* Cart and Checkout components */}
