@@ -1,0 +1,882 @@
+{
+  "categories": [
+    {
+      "name": "Electronics",
+      "subcategories": [
+        {
+          "name": "Smartphones",
+          "products": [
+            {
+              "id": "ELEC001",
+              "name": "TechPro X1 Smartphone",
+              "brand": "TechPro",
+              "price": 799.99,
+
+              "description": "Latest model with 5G capability and advanced camera system.",
+              "specs": {
+                "screen": "6.5 inch OLED",
+                "storage": "256GB",
+                "camera": "Triple lens 48MP"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "ELEC002",
+              "name": "Galaxy Z Fold",
+              "brand": "Samsung",
+              "price": 1799.99,
+
+              "description": "Foldable smartphone with large internal display.",
+              "specs": {
+                "screen": "7.6 inch foldable AMOLED",
+                "storage": "512GB",
+                "camera": "Quad camera system"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Laptops",
+          "products": [
+            {
+              "id": "ELEC003",
+              "name": "UltraBook Pro 15",
+              "brand": "TechGear",
+              "price": 1299.99,
+
+              "description": "Powerful laptop for professionals and creatives.",
+              "specs": {
+                "processor": "Intel i7 11th Gen",
+                "ram": "16GB",
+                "storage": "512GB SSD"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "ELEC004",
+              "name": "MacBook Air M2",
+              "brand": "Apple",
+              "price": 1199.99,
+
+              "description": "Thin and light laptop with Apple's latest M2 chip.",
+              "specs": {
+                "processor": "Apple M2",
+                "ram": "8GB",
+                "storage": "256GB SSD"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Tablets",
+          "products": [
+            {
+              "id": "ELEC005",
+              "name": "iPad Pro 12.9",
+              "brand": "Apple",
+              "price": 1099.99,
+
+              "description": "Powerful tablet with M2 chip and Liquid Retina XDR display.",
+              "specs": {
+                "screen": "12.9 inch Liquid Retina XDR",
+                "storage": "128GB",
+                "chip": "M2"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Headphones",
+          "products": [
+            {
+              "id": "ELEC006",
+              "name": "SoundWave Wireless Headphones",
+              "brand": "AudioTech",
+              "price": 199.99,
+
+              "description": "High-quality wireless headphones with noise cancellation.",
+              "specs": {
+                "type": "Over-ear",
+                "batteryLife": "30 hours",
+                "connectivity": "Bluetooth 5.0"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "ELEC007",
+              "name": "AirPods Pro",
+              "brand": "Apple",
+              "price": 249.99,
+
+              "description": "True wireless earbuds with active noise cancellation.",
+              "specs": {
+                "type": "In-ear",
+                "batteryLife": "4.5 hours (24 hours with case)",
+                "connectivity": "Bluetooth 5.0"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Smart Watches",
+          "products": [
+            {
+              "id": "ELEC008",
+              "name": "FitTrack Pro",
+              "brand": "TechFit",
+              "price": 299.99,
+
+              "description": "Advanced smartwatch with fitness tracking and ECG.",
+              "specs": {
+                "display": "1.4 inch AMOLED",
+                "waterResistance": "5 ATM",
+                "batteryLife": "Up to 7 days"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Cameras",
+          "products": [
+            {
+              "id": "ELEC009",
+              "name": "ProShot DSLR",
+              "brand": "CaptureTech",
+              "price": 1299.99,
+
+              "description": "Professional-grade DSLR camera for photography enthusiasts.",
+              "specs": {
+                "sensor": "Full-frame 45MP",
+                "iso": "100-51,200",
+                "videoResolution": "4K 60fps"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Gaming Consoles",
+          "products": [
+            {
+              "id": "ELEC010",
+              "name": "GameStation 5",
+              "brand": "GameTech",
+              "price": 499.99,
+
+              "description": "Next-gen gaming console with 4K graphics and fast loading times.",
+              "specs": {
+                "storage": "825GB SSD",
+                "resolution": "4K at 120fps",
+                "rayTracing": "Yes"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clothing",
+      "subcategories": [
+        {
+          "name": "Men's Apparel",
+          "products": [
+            {
+              "id": "CLTH001",
+              "name": "Classic Fit Dress Shirt",
+              "brand": "FashionCo",
+              "price": 49.99,
+
+              "description": "Comfortable and stylish dress shirt for any occasion.",
+              "specs": {
+                "material": "100% Cotton",
+                "fit": "Classic",
+                "careInstructions": "Machine washable"
+              },
+              "variants": [
+                {
+                  "color": "White",
+                  "sizes": ["S", "M", "L", "XL"]
+                },
+                {
+                  "color": "Blue",
+                  "sizes": ["M", "L", "XL"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "CLTH003",
+              "name": "Slim Fit Jeans",
+              "brand": "DenimPro",
+              "price": 59.99,
+
+              "description": "Modern slim fit jeans with a classic look.",
+              "specs": {
+                "material": "98% Cotton, 2% Elastane",
+                "fit": "Slim",
+                "careInstructions": "Machine wash cold"
+              },
+              "variants": [
+                {
+                  "color": "Dark Blue",
+                  "sizes": ["30", "32", "34", "36", "38"]
+                },
+                {
+                  "color": "Black",
+                  "sizes": ["30", "32", "34", "36", "38", "40"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "CLTH005",
+              "name": "Leather Jacket",
+              "brand": "UrbanRider",
+              "price": 149.99,
+
+              "description": "Stylish leather jacket for a bold, urban look.",
+              "specs": {
+                "material": "100% Genuine Leather",
+                "fit": "Slim",
+                "careInstructions": "Dry clean only"
+              },
+              "variants": [
+                {
+                  "color": "Black",
+                  "sizes": ["M", "L", "XL", "XXL"]
+                },
+                {
+                  "color": "Brown",
+                  "sizes": ["M", "L", "XL"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "CLTH007",
+              "name": "Plaid Button-Up Shirt",
+              "brand": "CasualWear",
+              "price": 39.99,
+
+              "description": "Casual plaid shirt, perfect for layering or wearing alone.",
+              "specs": {
+                "material": "100% Cotton",
+                "fit": "Regular",
+                "careInstructions": "Machine washable"
+              },
+              "variants": [
+                {
+                  "color": "Red Plaid",
+                  "sizes": ["M", "L", "XL", "XXL"]
+                },
+                {
+                  "color": "Green Plaid",
+                  "sizes": ["M", "L", "XL"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Women's Apparel",
+          "products": [
+            {
+              "id": "CLTH002",
+              "name": "Floral Summer Dress",
+              "brand": "ChicStyles",
+              "price": 79.99,
+
+              "description": "Light and breezy dress perfect for summer days.",
+              "specs": {
+                "material": "95% Cotton, 5% Spandex",
+                "length": "Knee-length",
+                "careInstructions": "Machine wash cold"
+              },
+              "variants": [
+                {
+                  "color": "Blue Floral",
+                  "sizes": ["XS", "S", "M", "L"]
+                },
+                {
+                  "color": "Pink Floral",
+                  "sizes": ["S", "M", "L", "XL"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "CLTH004",
+              "name": "V-Neck Sweater",
+              "brand": "CozyKnit",
+              "price": 59.99,
+
+              "description": "Soft and warm V-neck sweater, great for layering.",
+              "specs": {
+                "material": "80% Wool, 20% Nylon",
+                "fit": "Regular",
+                "careInstructions": "Hand wash or dry clean"
+              },
+              "variants": [
+                {
+                  "color": "Gray",
+                  "sizes": ["S", "M", "L", "XL"]
+                },
+                {
+                  "color": "Beige",
+                  "sizes": ["S", "M", "L", "XL"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "CLTH008",
+              "name": "Knitted Scarf",
+              "brand": "CozyKnit",
+              "price": 29.99,
+
+              "description": "Warm knitted scarf, ideal for cold weather.",
+              "specs": {
+                "material": "100% Wool",
+                "length": "70 inches",
+                "careInstructions": "Hand wash or dry clean"
+              },
+              "variants": [
+                {
+                  "color": "Gray",
+                  "sizes": ["One Size"]
+                },
+                {
+                  "color": "Navy",
+                  "sizes": ["One Size"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "CLTH006",
+              "name": "High-Waisted Skinny Jeans",
+              "brand": "TrendyFit",
+              "price": 69.99,
+
+              "description": "Figure-flattering high-waisted jeans, perfect for any occasion.",
+              "specs": {
+                "material": "90% Cotton, 10% Elastane",
+                "fit": "Skinny",
+                "careInstructions": "Machine wash cold"
+              },
+              "variants": [
+                {
+                  "color": "Dark Blue",
+                  "sizes": ["S", "M", "L", "XL"]
+                },
+                {
+                  "color": "Light Blue",
+                  "sizes": ["S", "M", "L", "XL"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Home Decor",
+      "subcategories": [
+        {
+          "name": "Furniture",
+          "products": [
+            {
+              "id": "HOME001",
+              "name": "Modern Lounge Chair",
+              "brand": "CozyHome",
+              "price": 299.99,
+
+              "description": "Sleek and comfortable lounge chair for your living room.",
+              "specs": {
+                "material": "Leather and wood",
+                "dimensions": "30\" x 32\" x 34\"",
+                "weight": "25 lbs"
+              },
+              "variants": [
+                {
+                  "color": "Black"
+                },
+                {
+                  "color": "Brown"
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Lighting",
+          "products": [
+            {
+              "id": "HOME002",
+              "name": "Adjustable Floor Lamp",
+              "brand": "LightBright",
+              "price": 129.99,
+
+              "description": "Modern floor lamp with adjustable arm and dimmer.",
+              "specs": {
+                "material": "Metal and fabric",
+                "height": "60 inches",
+                "bulbType": "LED"
+              },
+              "variants": [
+                {
+                  "color": "Brushed Nickel"
+                },
+                {
+                  "color": "Matte Black"
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "HOME003",
+              "name": "Wooden Coffee Table",
+              "brand": "RusticCharm",
+              "price": 199.99,
+
+              "description": "Rustic wooden coffee table with a sturdy design and storage space.",
+              "specs": {
+                "material": "Solid wood",
+                "dimensions": "40\" x 20\" x 18\"",
+                "weight": "40 lbs"
+              },
+              "variants": [
+                {
+                  "color": "Natural Oak"
+                },
+                {
+                  "color": "Walnut"
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "HOME004",
+              "name": "Velvet Throw Pillow",
+              "brand": "SoftTouch",
+              "price": 29.99,
+
+              "description": "Luxurious velvet throw pillow that adds comfort and style to your living space.",
+              "specs": {
+                "material": "100% Velvet",
+                "dimensions": "18\" x 18\"",
+                "careInstructions": "Spot clean only"
+              },
+              "variants": [
+                {
+                  "color": "Emerald Green"
+                },
+                {
+                  "color": "Royal Blue"
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "HOME005",
+              "name": "Decorative Wall Mirror",
+              "brand": "Reflections",
+              "price": 99.99,
+
+              "description": "Elegant wall mirror with a decorative gold frame.",
+              "specs": {
+                "material": "Glass and metal",
+                "dimensions": "30\" x 40\"",
+                "weight": "15 lbs"
+              },
+              "variants": [
+                {
+                  "color": "Gold Frame"
+                },
+                {
+                  "color": "Silver Frame"
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            },
+            {
+              "id": "HOME006",
+              "name": "Ceramic Table Vase",
+              "brand": "ArtisanCraft",
+              "price": 49.99,
+
+              "description": "Handcrafted ceramic vase with a smooth, minimalist design.",
+              "specs": {
+                "material": "Ceramic",
+                "dimensions": "12\" x 6\"",
+                "careInstructions": "Wipe clean with a damp cloth"
+              },
+              "variants": [
+                {
+                  "color": "White"
+                },
+                {
+                  "color": "Matte Black"
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sports & Fitness",
+      "subcategories": [
+        {
+          "name": "Equipment",
+          "products": [
+            {
+              "id": "SPRT001",
+              "name": "Pro Yoga Mat",
+              "brand": "FitLife",
+              "price": 39.99,
+
+              "description": "High-quality, non-slip yoga mat for all types of yoga.",
+              "specs": {
+                "material": "Eco-friendly TPE",
+                "thickness": "6mm",
+                "dimensions": "72\" x 24\""
+              },
+              "variants": [
+                {
+                  "color": "Purple"
+                },
+                {
+                  "color": "Blue"
+                },
+                {
+                  "color": "Green"
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Fitness Apparel",
+          "products": [
+            {
+              "id": "SPRT002",
+              "name": "Performance Running Shorts",
+              "brand": "SpeedGear",
+              "price": 34.99,
+
+              "description": "Lightweight, breathable shorts for runners.",
+              "specs": {
+                "material": "88% Polyester, 12% Spandex",
+                "feature": "Built-in liner",
+                "pockets": "Zippered back pocket"
+              },
+              "variants": [
+                {
+                  "color": "Black",
+                  "sizes": ["S", "M", "L", "XL"]
+                },
+                {
+                  "color": "Navy",
+                  "sizes": ["M", "L", "XL"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Beauty & Personal Care",
+      "subcategories": [
+        {
+          "name": "Skincare",
+          "products": [
+            {
+              "id": "BEAU001",
+              "name": "Hydrating Face Cream",
+              "brand": "GlowSkin",
+              "price": 24.99,
+
+              "description": "24-hour hydration for all skin types.",
+              "specs": {
+                "size": "50ml",
+                "skinType": "All",
+                "ingredients": "Water, Glycerin, Shea Butter"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Haircare",
+          "products": [
+            {
+              "id": "BEAU002",
+              "name": "Volumizing Shampoo",
+              "brand": "LuxeLocks",
+              "price": 18.99,
+
+              "description": "Adds volume and shine to fine hair.",
+              "specs": {
+                "size": "250ml",
+                "hairType": "Fine",
+                "features": "Sulfate-free, Paraben-free"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toys & Games",
+      "subcategories": [
+        {
+          "name": "Action Figures",
+          "products": [
+            {
+              "id": "TOY001",
+              "name": "Galactic Hero Action Figure",
+              "brand": "ToyWonders",
+              "price": 19.99,
+
+              "description": "Poseable action figure from the popular space movie series.",
+              "specs": {
+                "height": "6 inches",
+                "material": "Plastic",
+                "ageRange": "6 years and up"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Board Games",
+          "products": [
+            {
+              "id": "TOY002",
+              "name": "Strategic Conquest Board Game",
+              "brand": "GameMasters",
+              "price": 49.99,
+
+              "description": "Epic strategy game for 2-5 players.",
+              "specs": {
+                "players": "2-5",
+                "duration": "60-90 minutes",
+                "ageRange": "12 years and up"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Books & Stationery",
+      "subcategories": [
+        {
+          "name": "Novels",
+          "products": [
+            {
+              "id": "BOOK001",
+              "name": "The Midnight Mystery",
+              "brand": "Penguin Books",
+              "price": 14.99,
+
+              "description": "Thrilling detective novel set in 1920s London.",
+              "specs": {
+                "format": "Paperback",
+                "pages": "386",
+                "language": "English"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Notebooks",
+          "products": [
+            {
+              "id": "STAT001",
+              "name": "Premium Leather Journal",
+              "brand": "WriteWell",
+              "price": 29.99,
+
+              "description": "Handcrafted leather journal with premium paper.",
+              "specs": {
+                "cover": "Genuine leather",
+                "pages": "240",
+                "paperWeight": "100 gsm"
+              },
+              "variants": [
+                {
+                  "color": "Brown"
+                },
+                {
+                  "color": "Black"
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kitchen Appliances",
+      "subcategories": [
+        {
+          "name": "Blenders",
+          "products": [
+            {
+              "id": "KITC001",
+              "name": "PowerBlend Pro",
+              "brand": "KitchenTech",
+              "price": 89.99,
+
+              "description": "High-powered blender for smoothies and food prep.",
+              "specs": {
+                "power": "1000W",
+                "capacity": "64 oz",
+                "speeds": "10 variable speeds"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Toasters",
+          "products": [
+            {
+              "id": "KITC002",
+              "name": "Smart 4-Slice Toaster",
+              "brand": "ToastMaster",
+              "price": 59.99,
+
+              "description": "4-slice toaster with digital controls and multiple settings.",
+              "specs": {
+                "slices": "4",
+                "settings": "7 browning levels",
+                "features": "Bagel, Defrost, and Reheat functions"
+              },
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Footwear",
+      "subcategories": [
+        {
+          "name": "Sneakers",
+          "products": [
+            {
+              "id": "FOOT001",
+              "name": "CloudWalk Running Shoes",
+              "brand": "SportStep",
+              "price": 129.99,
+
+              "description": "Lightweight running shoes with superior cushioning.",
+              "specs": {
+                "type": "Running",
+                "material": "Breathable mesh and synthetic",
+                "sole": "Rubber"
+              },
+              "variants": [
+                {
+                  "color": "Black/White",
+                  "sizes": ["7", "8", "9", "10", "11", "12"]
+                },
+                {
+                  "color": "Blue/Gray",
+                  "sizes": ["8", "9", "10", "11"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        },
+        {
+          "name": "Sandals",
+          "products": [
+            {
+              "id": "FOOT002",
+              "name": "Comfort Strap Sandals",
+              "brand": "EasyWalk",
+              "price": 49.99,
+
+              "description": "Comfortable sandals with adjustable straps.",
+              "specs": {
+                "type": "Casual",
+                "material": "Leather and textile",
+                "sole": "EVA"
+              },
+              "variants": [
+                {
+                  "color": "Brown",
+                  "sizes": ["6", "7", "8", "9", "10"]
+                },
+                {
+                  "color": "Black",
+                  "sizes": ["7", "8", "9", "10"]
+                }
+              ],
+              "inStock": true,
+              "imageUrl": "/api/placeholder/300/300"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
