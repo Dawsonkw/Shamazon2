@@ -6,7 +6,7 @@ function Nav() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
   return (
-    <nav className="flex text-white/70 text-lg font-medium">
+    <nav className="flex text-white/65  text-lg">
       <ul className="flex flex-row relative">
         {categories.map((category) => (
           <li key={category} className="mr-6 relative">

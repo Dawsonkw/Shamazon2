@@ -19,7 +19,7 @@ function App() {
       <Cart />
       <Checkout />
 
-      {/* Login portal, Will it use Django or firebase like last time. Only time will tell */}
+      {/* Login portal, apparently Django has a baked in auth feature so we're gonna learn that */}
       <Account />
       <Login />
 

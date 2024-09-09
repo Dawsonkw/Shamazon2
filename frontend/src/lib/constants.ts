@@ -1,7 +1,6 @@
 export const categories = [
   "Smartphones",
-  "Laptops",
-  "Tablets",
+  "Computers",
   "Headphones",
   "Smartwatches",
   "Cameras",
