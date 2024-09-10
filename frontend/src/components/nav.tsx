@@ -13,7 +13,7 @@ function Nav() {
             {/* This is not going to be an anchor likely since it's gonna have a popover but I doont want to code up the ppopover right now so for now it is what it is  */}
             <a
               href="#"
-              className="block py-2 mt-4"
+              className="block py-1 mt-4"
               onClick={() => setActiveCategory(category)}
             >
               {category}
