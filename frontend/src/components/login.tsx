@@ -22,6 +22,16 @@ function Login() {
         >
           Login
         </button>
+
+        <button
+          className="p-2 rounded-md shadow-lg bg-blue-400"
+          onClick={() => {
+            //Add functionality for account Registration with Django endpoint after you make API
+          }}
+        >
+          Sign up
+        </button>
+        <p className="text-xs text-center">Don't have an account? Sign up.</p>
       </form>
     </div>
   );
