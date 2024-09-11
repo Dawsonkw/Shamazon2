@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 const productsData = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "../../electronics.json"), "utf8")
+  fs.readFileSync(path.join(__dirname, "../../../electronics.json"), "utf8")
 );
 
 export const getAllProducts = (req: Request, res: Response) => {
