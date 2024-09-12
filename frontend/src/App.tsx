@@ -6,6 +6,7 @@ import Header from "./components/header";
 import Item from "./components/item";
 import Items from "./components/items";
 import Login from "./components/login";
+import PaginationControls from "./components/paginationControls";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       {/* Login portal, apparently Django has a baked in auth feature so we're gonna learn that */}
       <Account />
       <Login />
+
+      <PaginationControls />
 
       <Footer />
     </>

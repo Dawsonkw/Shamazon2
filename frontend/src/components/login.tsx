@@ -17,7 +17,7 @@ function Login() {
         <button
           className="p-2 rounded-md shadow-lg bg-blue-400"
           onClick={() => {
-            //Add functionality for login with Django endpoint after you make API
+            //Add functionality for login with express endpoint after you make API
           }}
         >
           Login
@@ -26,7 +26,7 @@ function Login() {
         <button
           className="p-2 rounded-md shadow-lg bg-blue-400"
           onClick={() => {
-            //Add functionality for account Registration with Django endpoint after you make API
+            //Add functionality for account Registration with express endpoint after you make API
           }}
         >
           Sign up

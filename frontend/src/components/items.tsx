@@ -1,6 +1,10 @@
 // List view for all items
 function Items() {
-  return <div></div>;
+  return (
+    <main>
+      <h1>Items</h1>
+    </main>
+  );
 }
 
 export default Items;
