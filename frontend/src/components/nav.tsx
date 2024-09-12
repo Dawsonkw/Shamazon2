@@ -6,31 +6,30 @@ function Nav() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
   return (
-    <nav className="flex text-white/65  text-lg">
-      <ul className="flex flex-row relative">
+    <nav className="bg-white shadow-lg rounded-md overflow-hidden z-30">
+      <ul className="p-2">
         {categories.map((category) => (
-          <li key={category} className="mr-6 relative">
-            {/* This is not going to be an anchor likely since it's gonna have a popover but I doont want to code up the ppopover right now so for now it is what it is  */}
-            <a
-              href="#"
-              className="block py-1 mt-4"
+          <li key={category} className="relative">
+            <button
               onClick={() => setActiveCategory(category)}
+              className="w-full text-left px-2 py-2  text-gray-700 hover:bg-gray-100 transition-colors"
             >
               {category}
-            </a>
-
-            {location.pathname === `/${category.toLowerCase()}` && (
-              <motion.div
-                layoutId="underline"
-                className="bg-accent h-0.5 absolute bottom-1 left-0 right-0"
-              />
-            )}
-
+            </button>
             {activeCategory === category && (
               <motion.div
-                layoutId="underline"
-                className="bg-accent h-0.5 absolute bottom-1 left-0 right-0"
-              />
+                layoutId="highlight"
+                className="absolute inset-0 pointer-events-none"
+                initial={false}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 30,
+                }}
+              >
+                <motion.div className="absolute left-0 top-0 bottom-0 w-0.5 bg-accent" />
+                <motion.div className="absolute left-0 bottom-0 right-0 h-0.5 bg-accent" />
+              </motion.div>
             )}
           </li>
         ))}
