@@ -9,6 +9,7 @@ dotenv.config();
 
 const app = express();
 
+// Would update cors to be more specific if this was a production project
 app.use(cors());
 app.use(express.json());
 

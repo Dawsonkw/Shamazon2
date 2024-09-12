@@ -5,7 +5,7 @@ import Searchbar from "./searchbar";
 function Header() {
   return (
     <header className="bg-gradient-to-b from-purple-500 to-purple-800 h-[225px] max-h-[225px] z-0 flex w-screen justify-between">
-      <div className="absolute inset-0 h-[225px] bg-pattern opacity-10 z-0"></div>
+      <div className="absolute inset-0 h-[225px] bg-pattern opacity-20 z-0"></div>
 
       <div className="flex items-center z-40">
         <Icon />

@@ -12,7 +12,7 @@ function Searchbar() {
         type="text"
         required
         placeholder="Search for a product..."
-        className="w-full pl-10 pr-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+        className="w-full pl-10 pr-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent "
       />
       <button
         type="submit"
