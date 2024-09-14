@@ -23,7 +23,7 @@ function App() {
       <Cart />
       <Checkout />
 
-      {/* Login portal, apparently Django has a baked in auth feature so we're gonna learn that */}
+      {/* Login portal */}
       <Account />
       <Login />
 

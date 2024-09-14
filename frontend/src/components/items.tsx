@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import fetchProduct from "../lib/hooks";
 import { ProductApiResponse } from "../lib/types";
+import handleFetchProduct from "../lib/hooks";
 
 // List view for all items
 function Items() {
@@ -13,7 +13,7 @@ function Items() {
     const loadProducts = async () => {
       try {
         setIsLoading(true);
-        const data = await fetchProduct();
+        const data = await handleFetchProduct();
         if (data) {
           setProductList(data);
         } else {
@@ -38,16 +38,17 @@ function Items() {
   }
 
   return (
-    <main>
-      <h1>Items</h1>
-      <ul>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-2xl font-bold mb-4">Items</h1>
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {productList.map((product) => (
-          <li key={product.id}>
-            {product.name} - ${product.price}
+          <li key={product.id} className="border p-4 rounded shadow">
+            <h2 className="font-semibold">{product.name}</h2>
+            <p className="text-gray-600">${product.price.toFixed(2)}</p>
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 }
 
