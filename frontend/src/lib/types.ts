@@ -15,3 +15,9 @@ export type ProductApiResponse = {
   brand: string;
   specs: Record<string, string | number | boolean>;
 };
+
+export type PaginationControlsProps = {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (newPage: number) => void;
+};

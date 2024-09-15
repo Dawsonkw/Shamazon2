@@ -12,4 +12,4 @@ export const categories = [
 
 export const BASE_API_URL = "http://localhost:5000/api";
 
-export const itemsPerPage = 8;
+export const itemsPerPage = 9;
