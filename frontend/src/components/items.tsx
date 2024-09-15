@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ProductApiResponse } from "../lib/types";
 import handleFetchProduct from "../lib/hooks";
+import PaginationControls from "./paginationControls";
 
 // List view for all items
 function Items() {
@@ -40,13 +41,10 @@ function Items() {
     loadProducts();
   }, []);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
-  if (error) {
-    return <p>Error: {error}</p>;
-  }
+  // Pagination controls and logic
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -59,6 +57,9 @@ function Items() {
           </li>
         ))}
       </ul>
+      <div>
+        <PaginationControls />
+      </div>
     </div>
   );
 }
