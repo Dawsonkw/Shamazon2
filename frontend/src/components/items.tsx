@@ -5,31 +5,42 @@ import handleFetchProduct from "../lib/hooks";
 // List view for all items
 function Items() {
   const [productList, setProductList] = useState<ProductApiResponse[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   // This useEffect hook is going to also be extracted into its own component
   useEffect(() => {
+    const isMounted = true;
+
     const loadProducts = async () => {
       try {
-        setIsLoading(true);
         const data = await handleFetchProduct();
-        if (data) {
-          setProductList(data);
-        } else {
-          setError(true);
+        if (isMounted) {
+          if (data) {
+            setProductList(data);
+          } else {
+            setError("No data found");
+          }
         }
       } catch (error) {
-        console.error(error);
+        if (isMounted) {
+          setError(
+            error instanceof Error
+              ? error.message
+              : "An unknown error has occurred"
+          );
+        }
       } finally {
-        setIsLoading(false);
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     };
 
     loadProducts();
   }, []);
 
-  if (isLoading) {
+  if (loading) {
     return <p>Loading...</p>;
   }
 
