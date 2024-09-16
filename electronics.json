@@ -18,7 +18,7 @@
                 "camera": "Triple lens 48MP"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC002",
@@ -32,7 +32,7 @@
                 "camera": "Quad camera system"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             }
           ]
         },
@@ -51,7 +51,7 @@
                 "storage": "512GB SSD"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC004",
@@ -65,7 +65,7 @@
                 "storage": "256GB SSD"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC005",
@@ -79,7 +79,7 @@
                 "chip": "M2"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC011",
@@ -93,7 +93,7 @@
                 "chip": "Snapdragon 888"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC012",
@@ -107,7 +107,7 @@
                 "chip": "A15 Bionic"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC013",
@@ -121,7 +121,7 @@
                 "chip": "Google Tensor"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC014",
@@ -135,7 +135,7 @@
                 "chip": "Snapdragon 888"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC015",
@@ -149,7 +149,7 @@
                 "chip": "Snapdragon 888"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC016",
@@ -163,7 +163,7 @@
                 "chip": "Snapdragon 888"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC017",
@@ -177,7 +177,7 @@
                 "chip": "Snapdragon 888"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             }
           ]
         },
@@ -196,7 +196,7 @@
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC007",
@@ -210,7 +210,7 @@
                 "connectivity": "Bluetooth 5.1"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC008",
@@ -224,7 +224,7 @@
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC009",
@@ -238,7 +238,7 @@
                 "connectivity": "Bluetooth 5.2"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC010",
@@ -252,7 +252,7 @@
                 "connectivity": "Bluetooth 5.2"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC011",
@@ -266,7 +266,7 @@
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC012",
@@ -280,7 +280,7 @@
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC007",
@@ -294,7 +294,7 @@
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             }
           ]
         },
@@ -313,7 +313,7 @@
                 "batteryLife": "Up to 7 days"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC012",
@@ -327,7 +327,7 @@
                 "batteryLife": "18 hours"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC013",
@@ -341,7 +341,7 @@
                 "batteryLife": "40 hours"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC014",
@@ -355,7 +355,7 @@
                 "batteryLife": "6 days"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC015",
@@ -369,7 +369,7 @@
                 "batteryLife": "14 days"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC016",
@@ -383,7 +383,7 @@
                 "batteryLife": "72 hours"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC017",
@@ -397,7 +397,7 @@
                 "batteryLife": "14 days"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC018",
@@ -411,7 +411,7 @@
                 "batteryLife": "21 days"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             }
           ]
         },
@@ -430,7 +430,7 @@
                 "videoResolution": "4K 60fps"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC013",
@@ -444,7 +444,7 @@
                 "videoResolution": "4K 30fps"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC014",
@@ -458,7 +458,7 @@
                 "videoResolution": "4K 60fps"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC015",
@@ -472,7 +472,7 @@
                 "videoResolution": "4K 60fps"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC016",
@@ -486,7 +486,7 @@
                 "videoResolution": "4K 30fps"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC017",
@@ -500,7 +500,7 @@
                 "videoResolution": "8K 30fps"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC018",
@@ -514,7 +514,7 @@
                 "videoResolution": "1080p 60fps"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC019",
@@ -528,7 +528,7 @@
                 "videoResolution": "4K 30fps"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             }
           ]
         },
@@ -547,7 +547,7 @@
                 "rayTracing": "Yes"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC014",
@@ -561,7 +561,7 @@
                 "rayTracing": "Yes"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC015",
@@ -575,7 +575,7 @@
                 "rayTracing": "Yes"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC016",
@@ -589,7 +589,7 @@
                 "rayTracing": "No"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC017",
@@ -603,7 +603,7 @@
                 "rayTracing": "No"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC018",
@@ -617,7 +617,7 @@
                 "rayTracing": "No"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC019",
@@ -631,7 +631,7 @@
                 "rayTracing": "No"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC020",
@@ -645,7 +645,7 @@
                 "rayTracing": "Yes"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             }
           ]
         },
@@ -664,7 +664,7 @@
                 "connectivity": "Bluetooth, HDMI ARC"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC016",
@@ -678,7 +678,7 @@
                 "sound": "360-degree audio"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC017",
@@ -692,7 +692,7 @@
                 "sound": "360-degree audio"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC018",
@@ -706,7 +706,7 @@
                 "sound": "5.1 surround sound"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC019",
@@ -720,7 +720,7 @@
                 "sound": "Stereo sound"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC020",
@@ -734,7 +734,7 @@
                 "sound": "High-fidelity stereo"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC021",
@@ -748,7 +748,7 @@
                 "sound": "Dolby Atmos surround"
               },
               "inStock": false,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             },
             {
               "id": "ELEC022",
@@ -762,7 +762,7 @@
                 "sound": "360-degree audio"
               },
               "inStock": true,
-              "imageUrl": "/api/placeholder/300/300"
+              "imageUrl": "src/assets/stockImage.webp"
             }
           ]
         }

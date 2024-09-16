@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ProductApiResponse } from "../lib/types";
 import handleFetchProduct from "../lib/hooks";
-import PaginationControls from "./paginationControls";
-import { itemsPerPage } from "../lib/constants";
+// import PaginationControls from "./paginationControls";
+// import { itemsPerPage } from "../lib/constants";
 
-// List view for all items
 function Items() {
   const [productList, setProductList] = useState<ProductApiResponse[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [currentPage, setCurrentPage] = useState(1);
+  // const [currentPage, setCurrentPage] = useState(1);
 
-  // This useEffect hook is going to also be extracted into its own component
   useEffect(() => {
-    const isMounted = true;
-
+    let isMounted = true;
     const loadProducts = async () => {
       try {
         const data = await handleFetchProduct();
@@ -39,41 +36,63 @@ function Items() {
         }
       }
     };
-
     loadProducts();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  // Pagination controls and logic
+  // Pagination logic
+  // const totalItems = productList.length;
+  // const totalPages = Math.ceil(totalItems / itemsPerPage);
+  // const indexOfLastItem = currentPage * itemsPerPage;
+  // const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = productList;
 
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = productList.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(productList.length / itemsPerPage);
-
-  const handlePageChange = (newPage: number) => {
-    setCurrentPage(newPage);
-  };
+  // const handlePageChange = (newPage: number) => {
+  //   setCurrentPage(newPage);
+  // };
 
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-4">Items</h1>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {currentItems.map((product) => (
-          <li key={product.id} className="border p-4 rounded shadow">
-            <h2 className="font-semibold">{product.name}</h2>
-            <p className="text-gray-600">${product.price.toFixed(2)}</p>
+          <li
+            key={product.id}
+            className="flex flex-col border p-4 rounded shadow"
+          >
+            <div className="flex flex-row justify-between">
+              <h2 className="font-semibold">{product.name}</h2>
+              <p className="text-gray-600">${product.price.toFixed(2)}</p>
+            </div>
+            <p className="text-gray-600">{product.category}</p>
+            <img
+              src={product.imageUrl}
+              alt={product.name}
+              className="w-full h-64 object-cover mb-4"
+            />
+            <p className="text-gray-600 ">{product.description}</p>
+            {/* <p className="text-gray-600">Rating: {product.rating.rate}</p> */}
+            <p className="text-gray-600">
+              Stock: {product.inStock ? "In Stock" : "Out of Stock"}
+            </p>
+            <p className="text-gray-600">Brand: {product.brand}</p>
+            <p className="text-gray-600">
+              Specs: {JSON.stringify(product.specs)}
+            </p>
           </li>
         ))}
       </ul>
       <div>
-        <PaginationControls
+        {/* <PaginationControls
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={handlePageChange}
-        />
+        /> */}
       </div>
     </div>
   );

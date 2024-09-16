@@ -6,7 +6,7 @@ export type ProductApiResponse = {
   price: number;
   category: string;
   description: string;
-  image: string;
+  imageUrl: string;
   rating: {
     rate: number;
     count: number;
