@@ -7,11 +7,16 @@ const productsData = JSON.parse(
 );
 
 export const getAllProducts = (req: Request, res: Response) => {
-  res.json(
-    productsData.categories.flatMap((category: any) =>
-      category.subcategories.flatMap((subcategory: any) => subcategory.products)
+  const products = productsData.categories.flatMap((category: any) =>
+    category.subcategories.flatMap((subcategory: any) =>
+      subcategory.products.map((product: any) => ({
+        ...product,
+        category: category.name,
+        subcategory: subcategory.name,
+      }))
     )
   );
+  res.json(products);
 };
 
 export const getProductById = (req: Request, res: Response) => {

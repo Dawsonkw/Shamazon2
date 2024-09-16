@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { BASE_API_URL } from "./constants";
 import { ProductApiResponse } from "./types";
 
+// Calls the API to fetch products
 export const handleFetchProduct = async (): Promise<
   ProductApiResponse[] | null
 > => {
@@ -19,6 +20,7 @@ export const handleFetchProduct = async (): Promise<
   }
 };
 
+// Use the handleFetchProduct function to get info to display products on page
 export function useFetchProducts() {
   const [productList, setProductList] = useState<ProductApiResponse[]>([]);
   const [loading, setLoading] = useState(true);

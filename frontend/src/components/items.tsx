@@ -25,12 +25,13 @@ function Items() {
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 tracking-wide leading-8 ">
         {productList.map((product) => (
           <li
-            key={product.id}
+            //use a datetime for the key
+            key={product.name}
             className="flex flex-col border p-4 rounded shadow-lg hover:bg-purple-100  transition duration-00 ease-in-out"
           >
             <div className="flex flex-row justify-between">
               <h2 className="font-semibold">{product.name}</h2>
-              {/* <p className="text-gray-600">${product.price.toFixed(2)}</p> */}
+              <p className="text-gray-600">${product.price.toFixed(2)}</p>
             </div>
             <p className="text-gray-600">{product.category}</p>
             <img
@@ -50,7 +51,7 @@ function Items() {
                 Stock: {product.inStock ? "In Stock" : "Out of Stock"}
               </p>
             </div>
-            <p className="text-gray-600 my-4 ">
+            <h2 className="text-gray-600 my-4 ">
               <div className="font-semibold flex justify-center underline">
                 Specs:
               </div>
@@ -61,7 +62,7 @@ function Items() {
                   </li>
                 ))}
               </ul>
-            </p>
+            </h2>
           </li>
         ))}
       </ul>

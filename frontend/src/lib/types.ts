@@ -4,7 +4,6 @@ export type ProductApiResponse = {
   id: string | number;
   name: string;
   price: number;
-  category: string;
   description: string;
   imageUrl: string;
   rating: {
@@ -14,6 +13,8 @@ export type ProductApiResponse = {
   inStock: boolean;
   brand: string;
   specs: Record<string, string | number | boolean>;
+  category: string;
+  subcategory: string;
 };
 
 export type PaginationControlsProps = {
