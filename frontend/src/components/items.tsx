@@ -77,15 +77,19 @@ function Items() {
             />
             <p className="text-gray-600 ">{product.description}</p>
             {/* <p className="text-gray-600">Rating: {product.rating.rate}</p> */}
-            <p className="text-gray-600">
-              Stock: {product.inStock ? "In Stock" : "Out of Stock"}
-            </p>
-            <p className="text-gray-600">Brand: {product.brand}</p>
-            <p className="text-gray-600">
-              Specs:
-              <ul>
+            <div className="flex flex-row justify-between">
+              <p className="text-gray-600">Brand: {product.brand}</p>
+              <p className="text-gray-600">
+                Stock: {product.inStock ? "In Stock" : "Out of Stock"}
+              </p>
+            </div>
+            <p className="text-gray-600  ">
+              <div className="font-semibold flex justify-center underline">
+                Specs:
+              </div>
+              <ul className="list-disc list-inside">
                 {Object.keys(product.specs).map((key) => (
-                  <li key={key}>
+                  <li key={key} className="capitalize">
                     {key}: {product.specs[key]}
                   </li>
                 ))}

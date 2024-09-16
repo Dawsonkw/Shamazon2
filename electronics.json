@@ -192,7 +192,7 @@
               "description": "High-quality wireless headphones with noise cancellation.",
               "specs": {
                 "type": "Over-ear",
-                "batteryLife": "30 hours",
+                "battery Life": "30 hours",
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": true,
@@ -206,7 +206,7 @@
               "description": "Premium over-ear headphones with advanced noise-cancellation technology.",
               "specs": {
                 "type": "Over-ear",
-                "batteryLife": "35 hours",
+                "battery Life": "35 hours",
                 "connectivity": "Bluetooth 5.1"
               },
               "inStock": true,
@@ -220,7 +220,7 @@
               "description": "Compact wireless earbuds with deep bass and water resistance.",
               "specs": {
                 "type": "In-ear",
-                "batteryLife": "15 hours",
+                "battery Life": "15 hours",
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": true,
@@ -234,7 +234,7 @@
               "description": "Professional over-ear headphones with studio-grade sound quality.",
               "specs": {
                 "type": "Over-ear",
-                "batteryLife": "40 hours",
+                "battery Life": "40 hours",
                 "connectivity": "Bluetooth 5.2"
               },
               "inStock": false,
@@ -248,7 +248,7 @@
               "description": "True wireless earbuds with active noise cancellation and wireless charging.",
               "specs": {
                 "type": "In-ear",
-                "batteryLife": "20 hours",
+                "battery Life": "20 hours",
                 "connectivity": "Bluetooth 5.2"
               },
               "inStock": true,
@@ -262,7 +262,7 @@
               "description": "Ergonomic over-ear headphones with extended battery life and lightweight design.",
               "specs": {
                 "type": "Over-ear",
-                "batteryLife": "25 hours",
+                "battery Life": "25 hours",
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": false,
@@ -276,7 +276,7 @@
               "description": "Wireless earbuds designed for workouts with sweat resistance and secure fit.",
               "specs": {
                 "type": "In-ear",
-                "batteryLife": "10 hours",
+                "battery Life": "10 hours",
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": true,
@@ -290,7 +290,7 @@
               "description": "True wireless earbuds with active noise cancellation.",
               "specs": {
                 "type": "In-ear",
-                "batteryLife": "4.5 hours (24 hours with case)",
+                "battery Life": "4.5 hours (24 hours with case)",
                 "connectivity": "Bluetooth 5.0"
               },
               "inStock": true,
@@ -310,7 +310,7 @@
               "specs": {
                 "display": "1.4 inch AMOLED",
                 "waterResistance": "5 ATM",
-                "batteryLife": "Up to 7 days"
+                "battery Life": "Up to 7 days"
               },
               "inStock": true,
               "imageUrl": "src/assets/stockImage.webp"
@@ -324,7 +324,7 @@
               "specs": {
                 "display": "1.9 inch OLED",
                 "waterResistance": "50m",
-                "batteryLife": "18 hours"
+                "battery Life": "18 hours"
               },
               "inStock": true,
               "imageUrl": "src/assets/stockImage.webp"
@@ -338,7 +338,7 @@
               "specs": {
                 "display": "1.4 inch Super AMOLED",
                 "waterResistance": "50m",
-                "batteryLife": "40 hours"
+                "battery Life": "40 hours"
               },
               "inStock": true,
               "imageUrl": "src/assets/stockImage.webp"
@@ -352,7 +352,7 @@
               "specs": {
                 "display": "1.58 inch AMOLED",
                 "waterResistance": "50m",
-                "batteryLife": "6 days"
+                "battery Life": "6 days"
               },
               "inStock": false,
               "imageUrl": "src/assets/stockImage.webp"
@@ -366,7 +366,7 @@
               "specs": {
                 "display": "1.3 inch Transflective",
                 "waterResistance": "100m",
-                "batteryLife": "14 days"
+                "battery Life": "14 days"
               },
               "inStock": true,
               "imageUrl": "src/assets/stockImage.webp"
@@ -380,7 +380,7 @@
               "specs": {
                 "display": "1.4 inch AMOLED + LCD",
                 "waterResistance": "IP68",
-                "batteryLife": "72 hours"
+                "battery Life": "72 hours"
               },
               "inStock": true,
               "imageUrl": "src/assets/stockImage.webp"
@@ -394,7 +394,7 @@
               "specs": {
                 "display": "1.43 inch AMOLED",
                 "waterResistance": "50m",
-                "batteryLife": "14 days"
+                "battery Life": "14 days"
               },
               "inStock": false,
               "imageUrl": "src/assets/stockImage.webp"
@@ -408,7 +408,7 @@
               "specs": {
                 "display": "1.39 inch AMOLED",
                 "waterResistance": "50m",
-                "batteryLife": "21 days"
+                "battery Life": "21 days"
               },
               "inStock": true,
               "imageUrl": "src/assets/stockImage.webp"
