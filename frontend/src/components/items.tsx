@@ -82,7 +82,14 @@ function Items() {
             </p>
             <p className="text-gray-600">Brand: {product.brand}</p>
             <p className="text-gray-600">
-              Specs: {JSON.stringify(product.specs)}
+              Specs:
+              <ul>
+                {Object.keys(product.specs).map((key) => (
+                  <li key={key}>
+                    {key}: {product.specs[key]}
+                  </li>
+                ))}
+              </ul>
             </p>
           </li>
         ))}
