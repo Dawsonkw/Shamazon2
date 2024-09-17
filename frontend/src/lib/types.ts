@@ -1,7 +1,7 @@
 export type PageDirection = "next" | "previous";
 
 export type ProductApiResponse = {
-  id: string | number;
+  id: number;
   name: string;
   price: number;
   description: string;

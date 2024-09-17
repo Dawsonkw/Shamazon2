@@ -25,15 +25,14 @@ function Items() {
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 tracking-wide leading-8 ">
         {productList.map((product) => (
           <li
-            //use a datetime for the key
-            key={product.name}
+            key={product.id}
             className="flex flex-col border p-4 rounded shadow-lg hover:bg-purple-100  transition duration-00 ease-in-out"
           >
             <div className="flex flex-row justify-between">
               <h2 className="font-semibold">{product.name}</h2>
               <p className="text-gray-600">${product.price.toFixed(2)}</p>
             </div>
-            <p className="text-gray-600">{product.category}</p>
+            <p className="text-gray-600">{product.subcategory}</p>
             <img
               src={product.imageUrl}
               alt={product.name}
@@ -56,9 +55,9 @@ function Items() {
                 Specs:
               </div>
               <ul className="list-disc list-inside">
-                {Object.keys(product.specs).map((key) => (
-                  <li key={key} className="capitalize">
-                    {key}: {product.specs[key]}
+                {Object.keys(product.specs).map((specKey, index) => (
+                  <li key={index} className="capitalize">
+                    {specKey}: {product.specs[specKey]}
                   </li>
                 ))}
               </ul>

@@ -7,7 +7,7 @@
           "name": "Smartphones",
           "products": [
             {
-              "id": "ELEC001",
+              "id": "12345678",
               "name": "TechPro X1 Smartphone",
               "brand": "TechPro",
               "price": 799.99,
@@ -21,7 +21,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC002",
+              "id": "2",
               "name": "Galaxy Z Fold",
               "brand": "Samsung",
               "price": 1799.99,
@@ -40,7 +40,7 @@
           "name": "Computers",
           "products": [
             {
-              "id": "ELEC003",
+              "id": "3",
               "name": "UltraBook Pro 15",
               "brand": "TechGear",
               "price": 1299.99,
@@ -54,7 +54,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC004",
+              "id": "4",
               "name": "MacBook Air M2",
               "brand": "Apple",
               "price": 1199.99,
@@ -68,7 +68,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC005",
+              "id": "5",
               "name": "iPad Pro 12.9",
               "brand": "Apple",
               "price": 1099.99,
@@ -82,7 +82,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC011",
+              "id": "6",
               "name": "Galaxy Tab S8",
               "brand": "Samsung",
               "price": 699.99,
@@ -96,7 +96,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC012",
+              "id": "7",
               "name": "iPhone 13 Pro",
               "brand": "Apple",
               "price": 999.99,
@@ -110,7 +110,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC013",
+              "id": "8",
               "name": "Pixel 6",
               "brand": "Google",
               "price": 599.99,
@@ -124,7 +124,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0142",
+              "id": "9",
               "name": "Xperia 1 III",
               "brand": "Sony",
               "price": 1199.99,
@@ -138,7 +138,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0151",
+              "id": "10",
               "name": "OnePlus 9 Pro",
               "brand": "OnePlus",
               "price": 799.99,
@@ -152,7 +152,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0161",
+              "id": "11",
               "name": "Mi 11 Ultra",
               "brand": "Xiaomi",
               "price": 899.99,
@@ -166,7 +166,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0171",
+              "id": "12",
               "name": "Galaxy Z Fold 3",
               "brand": "Samsung",
               "price": 1799.99,
@@ -185,7 +185,7 @@
           "name": "Headphones",
           "products": [
             {
-              "id": "ELEC006",
+              "id": "13",
               "name": "SoundWave Wireless Headphones",
               "brand": "AudioTech",
               "price": 199.99,
@@ -199,7 +199,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC007",
+              "id": "14",
               "name": "Elite Noise Cancelling Headphones",
               "brand": "QuietTech",
               "price": 249.99,
@@ -213,7 +213,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC008",
+              "id": "15",
               "name": "BassBoost Wireless Earbuds",
               "brand": "BassMaster",
               "price": 129.99,
@@ -227,7 +227,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC009",
+              "id": "16",
               "name": "Studio Pro Headphones",
               "brand": "ProAudio",
               "price": 299.99,
@@ -241,7 +241,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC010",
+              "id": "17",
               "name": "True Wireless ANC Earbuds",
               "brand": "SonicBeats",
               "price": 149.99,
@@ -255,7 +255,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC011",
+              "id": "18",
               "name": "ComfortFit Wireless Headphones",
               "brand": "EaseAudio",
               "price": 179.99,
@@ -269,7 +269,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC012",
+              "id": "19",
               "name": "SportPulse Wireless Earbuds",
               "brand": "FitSound",
               "price": 99.99,
@@ -283,7 +283,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0013",
+              "id": "20",
               "name": "AirPods Pro",
               "brand": "Apple",
               "price": 249.99,
@@ -302,7 +302,7 @@
           "name": "Smart Watches",
           "products": [
             {
-              "id": "ELEC008",
+              "id": "21",
               "name": "FitTrack Pro",
               "brand": "TechFit",
               "price": 299.99,
@@ -316,7 +316,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC012",
+              "id": "22",
               "name": "Apple Watch Series 7",
               "brand": "Apple",
               "price": 399.99,
@@ -330,7 +330,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC013",
+              "id": "23",
               "name": "Galaxy Watch 4",
               "brand": "Samsung",
               "price": 349.99,
@@ -344,7 +344,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0143",
+              "id": "24",
               "name": "Fitbit Versa 3",
               "brand": "Fitbit",
               "price": 229.99,
@@ -358,7 +358,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0152",
+              "id": "25",
               "name": "Garmin Fenix 6 Pro",
               "brand": "Garmin",
               "price": 599.99,
@@ -372,7 +372,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0162",
+              "id": "26",
               "name": "TicWatch Pro 3",
               "brand": "Mobvoi",
               "price": 299.99,
@@ -386,7 +386,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0172",
+              "id": "27",
               "name": "Huawei Watch GT 3",
               "brand": "Huawei",
               "price": 249.99,
@@ -400,7 +400,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0181",
+              "id": "28",
               "name": "Amazfit GTR 3",
               "brand": "Amazfit",
               "price": 179.99,
@@ -419,7 +419,7 @@
           "name": "Cameras",
           "products": [
             {
-              "id": "ELEC009",
+              "id": "29",
               "name": "ProShot DSLR7",
               "brand": "CaptureTech",
               "price": 1299.99,
@@ -433,7 +433,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC013",
+              "id": "30",
               "name": "MirrorFlex Camera",
               "brand": "ShutterMax",
               "price": 899.99,
@@ -447,7 +447,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0144",
+              "id": "31",
               "name": "ProShot DSLR",
               "brand": "FotoPro",
               "price": 1199.99,
@@ -461,7 +461,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0153",
+              "id": "32",
               "name": "SnapZoom Action Cam",
               "brand": "ActionX",
               "price": 399.99,
@@ -475,7 +475,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0163",
+              "id": "33",
               "name": "PixelSharp Mirrorless",
               "brand": "OpticVision",
               "price": 799.99,
@@ -489,7 +489,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0173",
+              "id": "34",
               "name": "Vista Pro DSLR",
               "brand": "CaptureKing",
               "price": 1599.99,
@@ -503,7 +503,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0182",
+              "id": "35",
               "name": "ZoomLite Compact Camera",
               "brand": "QuickShot",
               "price": 299.99,
@@ -517,7 +517,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0191",
+              "id": "36",
               "name": "UltraZoom Bridge Camera",
               "brand": "MaxLens",
               "price": 549.99,
@@ -536,7 +536,7 @@
           "name": "Gaming Consoles",
           "products": [
             {
-              "id": "ELEC010",
+              "id": "37",
               "name": "GameStation 5",
               "brand": "GameTech",
               "price": 499.99,
@@ -550,7 +550,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0141",
+              "id": "38",
               "name": "XCube Series X",
               "brand": "MicroCube",
               "price": 499.99,
@@ -564,7 +564,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0154",
+              "id": "39",
               "name": "PlayCube 5",
               "brand": "GameBox",
               "price": 499.99,
@@ -578,7 +578,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0164",
+              "id": "40",
               "name": "GameStation Pro",
               "brand": "MegaSoft",
               "price": 399.99,
@@ -592,7 +592,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0174",
+              "id": "41",
               "name": "PowerHandheld",
               "brand": "GameGo",
               "price": 299.99,
@@ -606,7 +606,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0183",
+              "id": "42",
               "name": "VRMax Headset",
               "brand": "VirtualX",
               "price": 349.99,
@@ -620,7 +620,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0192",
+              "id": "43",
               "name": "ArcadeStick Pro",
               "brand": "RetroArcade",
               "price": 199.99,
@@ -634,7 +634,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0201",
+              "id": "44",
               "name": "GameMaster Elite PC",
               "brand": "PowerTech",
               "price": 1599.99,
@@ -653,7 +653,7 @@
           "name": "Home Audio Systems",
           "products": [
             {
-              "id": "ELEC0155",
+              "id": "45",
               "name": "SoundMaster 360",
               "brand": "AudioElite",
               "price": 399.99,
@@ -667,7 +667,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0165",
+              "id": "46",
               "name": "Echo Smart Speaker",
               "brand": "SmartHome",
               "price": 99.99,
@@ -681,7 +681,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0175",
+              "id": "47",
               "name": "BassBoom Wireless Speaker",
               "brand": "SoundPro",
               "price": 149.99,
@@ -695,7 +695,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0184",
+              "id": "48",
               "name": "HomeTheater Soundbar",
               "brand": "CineSound",
               "price": 299.99,
@@ -709,7 +709,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC0193",
+              "id": "49",
               "name": "SmartPod Speaker",
               "brand": "SmartAudio",
               "price": 129.99,
@@ -723,7 +723,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC020",
+              "id": "50",
               "name": "StudioTower Speakers",
               "brand": "HiFiMax",
               "price": 799.99,
@@ -737,7 +737,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC021",
+              "id": "51",
               "name": "SurroundBar 7000",
               "brand": "CinemaTech",
               "price": 399.99,
@@ -751,7 +751,7 @@
               "imageUrl": "src/assets/stockImage.webp"
             },
             {
-              "id": "ELEC022",
+              "id": "52",
               "name": "VoiceMate Mini Speaker",
               "brand": "TechVoice",
               "price": 89.99,
