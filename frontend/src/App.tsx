@@ -12,11 +12,11 @@ function App() {
     <>
       <Header />
 
-      {/* A list of items on a page view */}
-      <Items />
-
       {/* A single item on a page view */}
       <Item />
+
+      {/* A list of items on a page view */}
+      <Items />
 
       {/* Cart and Checkout components */}
       <Cart />
