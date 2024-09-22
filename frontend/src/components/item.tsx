@@ -13,11 +13,11 @@ function Item() {
 
   return (
     <main className="container mx-auto px-4 py-8 border border-black mt-[120px]">
-      <h1>Item</h1>
-
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4">
         <div className="flex justify-between flex-row">
-          <h2>{product.name}</h2>
+          <h1 className="text-3xl font-bold tracking-tight lg:text-6xl">
+            {product.name}
+          </h1>
           <p>${product.price}</p>
         </div>
         <div className="flex justify-between flex-row">
@@ -32,14 +32,25 @@ function Item() {
         </div>
       </div>
 
-      <div>
-        <img
-          className="mt-8"
-          src={product.imageUrl}
-          style={{ maxWidth: "50vw" }}
-          alt={product.name}
-        />
-        <p>{product.description}</p>
+      <div className="grid grid-cols-2 gap-8 ">
+        <div className="">
+          <img
+            className="mt-8"
+            src={product.imageUrl}
+            style={{ width: "1000px", maxWidth: "100%" }}
+            alt={product.name}
+          />
+        </div>
+        <div className="mt-8 mx-auto ">
+          <p>{product.description}</p>
+          <ul className="list-disc list-inside">
+            {Object.keys(product.specs).map((specKey, index) => (
+              <li key={index} className="capitalize">
+                {specKey}: {product.specs[specKey]}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </main>
   );
