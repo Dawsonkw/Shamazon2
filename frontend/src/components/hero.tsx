@@ -7,13 +7,15 @@ import TopPicks from "./topPicks";
 function Hero() {
   return (
     <main>
-      <div className="flex flex-row border border-black my-8 mx-8 h-[900px]">
+      <div className="flex flex-row items-center border border-black my-8 mx-8 h-[900px]">
         <SplashLogo />
-        <div className="flex-col border border-black max-h-[350px] mt-4 mx-auto">
-          <TopPicks />
-          <div className="flex-row">
-            <DealOfTheDay />
+        <div className="flex flex-col justify-center">
+          <div className=" border border-black max-h-[350px] my-8 mx-auto">
+            <TopPicks />
+          </div>
+          <div className="flex-row border border-black mt-4  h-[419px] my-8">
             <InfoSection />
+            <DealOfTheDay />
           </div>
         </div>
       </div>
