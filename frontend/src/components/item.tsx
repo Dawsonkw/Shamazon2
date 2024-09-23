@@ -6,7 +6,7 @@ function Item() {
   const { productList, loading, error } = useFetchProducts();
 
   // Right now were going to just trim the first item from the list to style the component then well figure out logic on how we want to get the items later.
-  const product = productList[0];
+  const product = productList[18];
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
@@ -18,10 +18,12 @@ function Item() {
           <h1 className="text-3xl font-bold tracking-tight lg:text-6xl">
             {product.name}
           </h1>
-          <p>${product.price}</p>
+          <p className="text-3xl font-bold tracking-tight lg:text-6xl mb-4">
+            ${product.price}
+          </p>
         </div>
         <div className="flex justify-between flex-row">
-          <p>{product.brand}</p>
+          <p className="text-xl font-bold  ">{product.brand}</p>
           <p
             className={`${
               product.inStock ? "bg-green-500" : "bg-red-500"
@@ -42,8 +44,9 @@ function Item() {
           />
         </div>
         <div className="mt-8 mx-auto ">
-          <p>{product.description}</p>
-          <ul className="list-disc list-inside">
+          <p className="text-xl">{product.description}</p>
+          <ul className="text-lg list-disc list-inside mt-8">
+            <div className="font-bold underline text-lg">Specifications:</div>
             {Object.keys(product.specs).map((specKey, index) => (
               <li key={index} className="capitalize">
                 {specKey}: {product.specs[specKey]}
