@@ -10,17 +10,17 @@ import Login from "./components/login";
 
 function App() {
   return (
-    <>
+    <div className="scrollbar-hide">
       <Header />
 
       {/* A hero component section for the home page, modeling after bestbuy landing page */}
       <Hero />
 
       {/* A single item on a page view */}
-      <Item />
+      {/* <Item /> */}
 
       {/* A list of items on a page view */}
-      <Items />
+      {/* <Items /> */}
 
       {/* Cart and Checkout components */}
       <Cart />
@@ -28,10 +28,10 @@ function App() {
 
       {/* Login portal */}
       <Account />
-      <Login />
+      {/* <Login /> */}
 
       <Footer />
-    </>
+    </div>
   );
 }
 

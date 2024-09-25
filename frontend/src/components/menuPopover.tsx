@@ -1,9 +1,38 @@
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Nav from "./nav";
 
 function Menupopover() {
   const [navOpen, setNavOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setNavOpen(false);
+      }
+    };
+    if (navOpen) {
+      {
+        document.addEventListener("mousedown", handleClickOutside);
+      }
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }
+  }, [navOpen]);
+
+  useEffect(() => {
+    if (navOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [navOpen]);
+
   return (
     <div className="relative">
       <button
@@ -21,7 +50,7 @@ function Menupopover() {
       </button>
 
       {navOpen && (
-        <div className="absolute top-full right-0  mr-3">
+        <div ref={menuRef} className="absolute top-full right-0  mr-3">
           <Nav />
         </div>
       )}

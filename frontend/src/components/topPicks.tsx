@@ -14,7 +14,10 @@ function TopPicks() {
   return (
     <div className="my-4">
       {topPicks.map((product) => (
-        <div className="inline-block mx-4 max-w-fit" key={product.id}>
+        <div
+          className="inline-block mx-4 max-w-fit hover:cursor-pointer"
+          key={product.id}
+        >
           <img
             src={product.imageUrl}
             alt={product.name}
@@ -22,7 +25,6 @@ function TopPicks() {
           />
           <div className="text-center hover:underline">
             <h2 className="text-wrap ">{product.name}</h2>
-            <p>${product.price}</p>
           </div>
         </div>
       ))}
