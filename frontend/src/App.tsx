@@ -10,17 +10,17 @@ import Login from "./components/login";
 
 function App() {
   return (
-    <div className="scrollbar-hide">
+    <div className="scrollbar-hide h-screen overflow-y-auto">
       <Header />
 
       {/* A hero component section for the home page, modeling after bestbuy landing page */}
-      <Hero />
+      {/* <Hero /> */}
 
       {/* A single item on a page view */}
       {/* <Item /> */}
 
       {/* A list of items on a page view */}
-      {/* <Items /> */}
+      <Items />
 
       {/* Cart and Checkout components */}
       <Cart />
