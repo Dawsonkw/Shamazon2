@@ -30,10 +30,7 @@ function Items() {
               key={product.id}
               className="flex flex-col border p-4 rounded shadow-lg hover:bg-purple-100  transition duration-00 ease-in-out"
             >
-              <Link
-                to={`/items/${product.id}`}
-                className="flex flex-col h-full"
-              >
+              <Link to={`/item/${product.id}`} className="flex flex-col h-full">
                 <div className="flex flex-row justify-between">
                   <h2 className="font-semibold">{product.name}</h2>
                   <p className="text-gray-600">${product.price.toFixed(2)}</p>
