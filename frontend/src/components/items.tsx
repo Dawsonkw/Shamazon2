@@ -42,18 +42,19 @@ function Items() {
               <p className="text-gray-600 flex text-center ">
                 {product.description}
               </p>
-              {/* <p className="text-gray-600">
-                Rating: {product.rating.count} {product.rating.rate}
-              </p> */}
               <div className="flex flex-row justify-between my-4">
                 <p className="text-gray-600">Brand: {product.brand}</p>
-                <p className="text-gray-600">
-                  Stock: {product.inStock ? "In Stock" : "Out of Stock"}
+                <p
+                  className={`${
+                    product.inStock ? "bg-green-500" : "bg-red-500"
+                  } py-2 px-4 text-white rounded-lg`}
+                >
+                  {product.inStock ? "In Stock" : "Out of Stock"}
                 </p>
               </div>
-              <h2 className="text-gray-600 my-4 ">
-                <div className="font-semibold flex justify-center underline">
-                  Specs:
+              <h2 className="text-gray-600 my-4 border border-gray-300/80 rounded-[10px] p-4">
+                <div className="font-semibold flex justify-center underline text-xl">
+                  Specs :
                 </div>
                 <ul className="list-disc list-inside">
                   {Object.keys(product.specs).map((specKey, index) => (
