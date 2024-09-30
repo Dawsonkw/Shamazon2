@@ -6,7 +6,7 @@ function SplashLogo() {
       <img
         src={splashLogo}
         alt="Splash Logo"
-        className="object-fit max-h-[800px] w-[500px] border-black my-8 mx-8"
+        className="object-fit max-h-[800px]  border-black my-8 mx-8"
       />
     </>
   );
