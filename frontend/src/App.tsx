@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Account from "./components/account";
 import Cart from "./components/cart";
 import Checkout from "./components/checkout";
@@ -10,28 +11,29 @@ import Login from "./components/login";
 
 function App() {
   return (
-    <div className="scrollbar-hide h-screen overflow-y-auto">
-      <Header />
-
-      {/* A hero component section for the home page, modeling after bestbuy landing page */}
-      {/* <Hero /> */}
-
-      {/* A single item on a page view */}
-      {/* <Item /> */}
-
-      {/* A list of items on a page view */}
-      <Items />
-
-      {/* Cart and Checkout components */}
-      <Cart />
-      <Checkout />
-
-      {/* Login portal */}
-      <Account />
-      {/* <Login /> */}
-
-      <Footer />
-    </div>
+    <Router>
+      <div className="scrollbar-hide h-screen overflow-y-auto">
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Items />
+              </>
+            }
+          />
+          <Route path="/items" element={<Items />} />
+          <Route path="/item/:id" element={<Item />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

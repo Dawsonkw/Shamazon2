@@ -1,12 +1,17 @@
 // Single view for a specific item
+import { useParams } from "react-router-dom";
 import { useFetchProducts } from "../lib/hooks";
+import { ProductApiResponse } from "../lib/types";
 
 // A single product view for a specific item,
 function Item() {
+  const { id } = useParams();
   const { productList, loading, error } = useFetchProducts();
 
   // Right now were going to just trim the first item from the list to style the component then well figure out logic on how we want to get the items later.
-  const product = productList[18];
+  const product: ProductApiResponse = productList.find(
+    (p) => p.id === parseInt(id!)
+  ) as ProductApiResponse;
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
