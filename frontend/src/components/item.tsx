@@ -1,6 +1,22 @@
 // Single view for a specific item
 import { useFetchProducts } from "../lib/hooks";
 
+//  AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+// typescript is not making me happy
+// Youll need to delete this later its just in to see if it would solve the issue. It didnt and im too braindead to try to logic through this rn
+// type ProductListTypes = {
+//   id: number;
+//   name: string;
+//   price: number;
+//   description: string;
+//   category: string;
+//   image: string;
+//   rating: {
+//     rate: number;
+//     count: number;
+//   };
+// };
+
 // A single product view for a specific item,
 function Item() {
   const { productList, loading, error } = useFetchProducts();
@@ -8,6 +24,10 @@ function Item() {
   // Right now were going to just trim the first item from the list to style the component then well figure out logic on how we want to get the items later.
 
   // Need to write the logic so it handles pulling the item, write a custom hook to pull the item from the list then call it here in place of this constant. the previous logic was not working so we're starting over.
+  // const product: ProductListTypes = productList.find(
+  //   (productList) => productList.id === parseInt(product.id)
+  // );
+
   const product = productList[0];
 
   if (loading) return <p>Loading...</p>;

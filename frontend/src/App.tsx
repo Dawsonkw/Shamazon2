@@ -14,6 +14,7 @@ function App() {
     <Router>
       <div className="scrollbar-hide h-screen overflow-y-auto">
         <Header />
+        <Item />
 
         <Routes>
           <Route
