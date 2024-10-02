@@ -17,6 +17,12 @@ export type ProductApiResponse = {
   subcategory: string;
 };
 
+export type FetchSingleProductResult = {
+  product: ProductApiResponse;
+  isLoading: boolean;
+  error: string | null;
+};
+
 export type PaginationControlsProps = {
   currentPage: number;
   totalPages: number;

@@ -79,3 +79,27 @@ export function useFetchProducts() {
 
   return { productList, loading, error };
 }
+
+export function useFetchSingleProduct(id: number) {
+  const [product, setProduct] = useState<ProductApiResponse | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const data = await handleFetchSingleProduct(id);
+        setProduct(data);
+      } catch (error) {
+        setError(
+          error instanceof Error ? error.message : "An unknown error occurred"
+        );
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchProduct();
+  }, [id]);
+
+  return { product, isLoading, error };
+}
