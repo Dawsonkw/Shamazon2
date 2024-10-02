@@ -13,25 +13,29 @@ function Item() {
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
+  if (!product) {
+    return <p>Product not found</p>;
+  }
+
   return (
     <main className="container mx-auto px-4 py-8 border border-black mt-[120px]">
       <div className="flex flex-col gap-4">
         <div className="flex justify-between flex-row">
           <h1 className="text-3xl font-bold tracking-tight lg:text-6xl">
-            {product?.name}
+            {product.name}
           </h1>
           <p className="text-3xl font-bold tracking-tight lg:text-6xl mb-4">
-            ${product?.price}
+            ${product.price}
           </p>
         </div>
         <div className="flex justify-between flex-row">
           <p className="text-xl font-bold  ">{product?.brand}</p>
           <p
             className={`${
-              product?.inStock ? "bg-green-500" : "bg-red-500"
+              product.inStock ? "bg-green-500" : "bg-red-500"
             } py-2 px-4 text-white rounded`}
           >
-            {product?.inStock ? "In Stock" : "Out Of Stock"}
+            {product.inStock ? "In Stock" : "Out Of Stock"}
           </p>
         </div>
       </div>
@@ -40,14 +44,14 @@ function Item() {
         <div className="">
           <img
             className="mt-8"
-            src={product?.imageUrl}
+            src={product.imageUrl}
             style={{ width: "1000px", maxWidth: "100%" }}
-            alt={product?.name}
+            alt={product.name}
           />
         </div>
         <div className="mt-8 mx-auto ">
           <p className="text-xl">{product?.description}</p>
-          {product?.specs && (
+          {product.specs && (
             <ul className="text-lg list-disc list-inside mt-8">
               <div className="font-bold underline text-lg">Specifications:</div>
               {Object.entries(product.specs).map(
