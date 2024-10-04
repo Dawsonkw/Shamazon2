@@ -1,19 +1,21 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Account from "./components/account";
-import Cart from "./components/cart";
-import Checkout from "./components/checkout";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Item from "./components/item";
 import Items from "./components/items";
-import Login from "./components/login";
+import { useState } from "react";
 
 function App() {
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+
   return (
     <Router>
       <div className="scrollbar-hide h-screen overflow-y-auto">
-        <Header />
+        <Header
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+        />
 
         <Routes>
           <Route
@@ -21,16 +23,23 @@ function App() {
             element={
               <>
                 <Hero />
-                <Items />
+                <Items
+                  selectedCategory={selectedCategory}
+                  setSelectedCategory={setSelectedCategory}
+                />
               </>
             }
           />
-          <Route path="/items" element={<Items />} />
+          <Route
+            path="/items"
+            element={
+              <Items
+                selectedCategory={selectedCategory}
+                setSelectedCategory={setSelectedCategory}
+              />
+            }
+          />
           <Route path="/item/:id" element={<Item />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>

@@ -17,6 +17,11 @@ export type ProductApiResponse = {
   subcategory: string;
 };
 
+export type ItemsProps = {
+  selectedCategory: string;
+  setSelectedCategory: (category: string) => void;
+};
+
 export type FetchSingleProductResult = {
   product: ProductApiResponse;
   isLoading: boolean;

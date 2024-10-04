@@ -1,8 +1,12 @@
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { useEffect, useRef, useState } from "react";
 import Nav from "./nav";
+import { ItemsProps } from "../lib/types";
 
-function Menupopover() {
+function Menupopover({
+  selectedCategory,
+  setSelectedCategory,
+}: ItemsProps): JSX.Element {
   const [navOpen, setNavOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
@@ -51,7 +55,10 @@ function Menupopover() {
 
       {navOpen && (
         <div ref={menuRef} className="absolute top-full right-0  mr-3">
-          <Nav />
+          <Nav
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+          />
         </div>
       )}
     </div>

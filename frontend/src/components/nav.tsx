@@ -1,22 +1,23 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { categories } from "../lib/constants";
+import { ItemsProps } from "../lib/types";
 
-function Nav() {
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
-
+function Nav({
+  selectedCategory,
+  setSelectedCategory,
+}: ItemsProps): JSX.Element {
   return (
     <nav className="bg-white shadow-lg rounded-md overflow-hidden z-30">
       <ul className="p-4">
         {categories.map((category) => (
           <li key={category} className="relative">
             <button
-              onClick={() => setActiveCategory(category)}
+              onClick={() => setSelectedCategory(category)}
               className="w-full text-left px-2 py-2  text-gray-700 hover:bg-gray-100 transition-colors tracking-wide leading-8 "
             >
               {category}
             </button>
-            {activeCategory === category && (
+            {selectedCategory === category && (
               <motion.div
                 layoutId="highlight"
                 className="absolute inset-0 pointer-events-none"
