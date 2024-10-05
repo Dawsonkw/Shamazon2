@@ -18,8 +18,8 @@ export type ProductApiResponse = {
 };
 
 export type ItemsProps = {
-  selectedCategory: string;
-  setSelectedCategory: (category: string) => void;
+  selectedSubcategory: string;
+  setSelectedSubcategory: (subcategory: string) => void;
 };
 
 export type FetchSingleProductResult = {
