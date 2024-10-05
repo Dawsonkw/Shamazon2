@@ -7,7 +7,7 @@ import TopPicks from "./topPicks";
 function Hero() {
   return (
     <main className="mx-auto scrollbar-hide flex justify-center">
-      <div className="flex flex-row items-center mx-8 h-[900px] ">
+      <div className="flex flex-row items-center mx-8 h-[850px] ">
         <div className="flex flex-col justify-center">
           <div className="  max-h-[350px] my-8 mx-auto">
             <TopPicks />
