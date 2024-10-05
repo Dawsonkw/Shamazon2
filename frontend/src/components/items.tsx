@@ -39,13 +39,12 @@ function Items({ selectedSubcategory }: ItemsProps): JSX.Element {
           (product) => product.subcategory === selectedSubcategory
         );
   console.log(selectedSubcategory, filteredProductList);
-
   return (
     <div className="">
       <div className="container mx-auto px-4 py-8 ">
         <h1 className="text-2xl font-bold mb-4">Items</h1>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 tracking-wide leading-8 ">
-          {products.map((product) => (
+          {filteredProductList.map((product) => (
             <li
               key={product.id}
               className="flex flex-col border p-4 rounded shadow-lg hover:bg-purple-100  transition duration-00 ease-in-out"
