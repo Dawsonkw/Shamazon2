@@ -4,7 +4,7 @@ import { ItemsProps } from "../lib/types";
 // import PaginationControls from "./paginationControls";
 // import { itemsPerPage } from "../lib/constants";
 
-function Items({ selectedCategory }: ItemsProps): JSX.Element {
+function Items({ selectedSubcategory }: ItemsProps): JSX.Element {
   const { productList, loading, error } = useFetchProducts();
 
   if (loading) return <p>Loading...</p>;
@@ -23,17 +23,29 @@ function Items({ selectedCategory }: ItemsProps): JSX.Element {
 
   /// So the logic ic sound but i think im pulling wrong cause my json structure cause it just displays a blank page but I get no errors. Not solving tonight but start here tomorrow
 
-  const filteredProducts =
-    selectedCategory === "all"
-      ? productList
-      : productList.filter((product) => product.category === selectedCategory);
+  const products = productList;
+  // const filteredProducts =
+  //   selectedSubcategory === "All"
+  //     ? productList
+  //     : productList.filter(
+  //         (product) => product.subcategory === selectedSubcategory
+  //       );
+  // console.log(filteredProducts);
+
+  const filteredProductList =
+    selectedSubcategory === "All"
+      ? products
+      : products.filter(
+          (product) => product.subcategory === selectedSubcategory
+        );
+  console.log(selectedSubcategory, filteredProductList);
 
   return (
     <div className="">
       <div className="container mx-auto px-4 py-8 ">
         <h1 className="text-2xl font-bold mb-4">Items</h1>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 tracking-wide leading-8 ">
-          {filteredProducts.map((product) => (
+          {products.map((product) => (
             <li
               key={product.id}
               className="flex flex-col border p-4 rounded shadow-lg hover:bg-purple-100  transition duration-00 ease-in-out"

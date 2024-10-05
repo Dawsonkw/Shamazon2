@@ -1,23 +1,23 @@
 import { motion } from "framer-motion";
-import { categories } from "../lib/constants";
+import { subcategories } from "../lib/constants";
 import { ItemsProps } from "../lib/types";
 
 function Nav({
-  selectedCategory,
-  setSelectedCategory,
+  selectedSubcategory,
+  setSelectedSubcategory,
 }: ItemsProps): JSX.Element {
   return (
     <nav className="bg-white shadow-lg rounded-md overflow-hidden z-30">
       <ul className="p-4">
-        {categories.map((category) => (
-          <li key={category} className="relative">
+        {subcategories.map((subcategory) => (
+          <li key={subcategory} className="relative">
             <button
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => setSelectedSubcategory(subcategory)}
               className="w-full text-left px-2 py-2  text-gray-700 hover:bg-gray-100 transition-colors tracking-wide leading-8 "
             >
-              {category}
+              {subcategory}
             </button>
-            {selectedCategory === category && (
+            {selectedSubcategory === subcategory && (
               <motion.div
                 layoutId="highlight"
                 className="absolute inset-0 pointer-events-none"

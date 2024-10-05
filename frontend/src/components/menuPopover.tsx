@@ -4,8 +4,8 @@ import Nav from "./nav";
 import { ItemsProps } from "../lib/types";
 
 function Menupopover({
-  selectedCategory,
-  setSelectedCategory,
+  selectedSubcategory,
+  setSelectedSubcategory,
 }: ItemsProps): JSX.Element {
   const [navOpen, setNavOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -56,8 +56,8 @@ function Menupopover({
       {navOpen && (
         <div ref={menuRef} className="absolute top-full right-0  mr-3">
           <Nav
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
+            selectedSubcategory={selectedSubcategory}
+            setSelectedSubcategory={setSelectedSubcategory}
           />
         </div>
       )}

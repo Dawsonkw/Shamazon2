@@ -7,14 +7,14 @@ import Items from "./components/items";
 import { useState } from "react";
 
 function App() {
-  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [selectedSubcategory, setSelectedSubcategory] = useState<string>("");
 
   return (
     <Router>
       <div className="scrollbar-hide h-screen overflow-y-auto">
         <Header
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
+          selectedSubcategory={selectedSubcategory}
+          setSelectedSubcategory={setSelectedSubcategory}
         />
 
         <Routes>
@@ -24,8 +24,8 @@ function App() {
               <>
                 <Hero />
                 <Items
-                  selectedCategory={selectedCategory}
-                  setSelectedCategory={setSelectedCategory}
+                  selectedSubcategory={selectedSubcategory}
+                  setSelectedSubcategory={setSelectedSubcategory}
                 />
               </>
             }
@@ -34,8 +34,8 @@ function App() {
             path="/items"
             element={
               <Items
-                selectedCategory={selectedCategory}
-                setSelectedCategory={setSelectedCategory}
+                selectedSubcategory={selectedSubcategory}
+                setSelectedSubcategory={setSelectedSubcategory}
               />
             }
           />

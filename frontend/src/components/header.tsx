@@ -4,8 +4,8 @@ import Menupopover from "./menuPopover";
 import Searchbar from "./searchbar";
 
 function Header({
-  selectedCategory,
-  setSelectedCategory,
+  selectedSubcategory,
+  setSelectedSubcategory,
 }: ItemsProps): JSX.Element {
   return (
     <header className="bg-gradient-to-b from-purple-500 to-purple-800 h-[225px] max-h-[225px] z-10 flex w-full justify-between sticky top-0">
@@ -20,8 +20,8 @@ function Header({
 
       <div className=" mr-8">
         <Menupopover
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
+          selectedSubcategory={selectedSubcategory}
+          setSelectedSubcategory={setSelectedSubcategory}
         />
       </div>
     </header>
