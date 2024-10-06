@@ -5,6 +5,7 @@ import Hero from "./components/hero";
 import Item from "./components/item";
 import Items from "./components/items";
 import { useState } from "react";
+import GenericAlert from "./components/genericAlert";
 
 function App() {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("");
@@ -22,7 +23,7 @@ function App() {
             path="/"
             element={
               <>
-                <Hero />
+                {/* <Hero /> */}
                 <Items
                   selectedSubcategory={selectedSubcategory}
                   setSelectedSubcategory={setSelectedSubcategory}
@@ -40,6 +41,8 @@ function App() {
             }
           />
           <Route path="/item/:id" element={<Item />} />
+
+          <Route path="*" element={<GenericAlert />} />
         </Routes>
         <Footer />
       </div>

@@ -21,16 +21,7 @@ function Items({ selectedSubcategory }: ItemsProps): JSX.Element {
   // //   setCurrentPage(newPage);
   // // };
 
-  /// So the logic ic sound but i think im pulling wrong cause my json structure cause it just displays a blank page but I get no errors. Not solving tonight but start here tomorrow
-
   const products = productList;
-  // const filteredProducts =
-  //   selectedSubcategory === "All"
-  //     ? productList
-  //     : productList.filter(
-  //         (product) => product.subcategory === selectedSubcategory
-  //       );
-  // console.log(filteredProducts);
 
   const filteredProductList =
     selectedSubcategory === "All"
