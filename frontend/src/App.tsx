@@ -6,6 +6,7 @@ import Item from "./components/item";
 import Items from "./components/items";
 import { useState } from "react";
 import GenericAlert from "./components/genericAlert";
+import Container from "./components/container";
 
 function App() {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("");
@@ -22,24 +23,16 @@ function App() {
           <Route
             path="/"
             element={
-              <>
-                {/* <Hero /> */}
+              <Container>
+                <Hero />
                 <Items
                   selectedSubcategory={selectedSubcategory}
                   setSelectedSubcategory={setSelectedSubcategory}
                 />
-              </>
+              </Container>
             }
           />
-          <Route
-            path="/items"
-            element={
-              <Items
-                selectedSubcategory={selectedSubcategory}
-                setSelectedSubcategory={setSelectedSubcategory}
-              />
-            }
-          />
+
           <Route path="/item/:id" element={<Item />} />
 
           <Route path="*" element={<GenericAlert />} />
