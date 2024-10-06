@@ -4,7 +4,10 @@ import { ItemsProps } from "../lib/types";
 // import PaginationControls from "./paginationControls";
 // import { itemsPerPage } from "../lib/constants";
 
-function Items({ selectedSubcategory }: ItemsProps): JSX.Element {
+function Items({
+  selectedSubcategory,
+  setItemsDisplayed,
+}: ItemsProps): JSX.Element {
   const { productList, loading, error } = useFetchProducts();
 
   if (loading) return <p>Loading...</p>;
@@ -29,6 +32,12 @@ function Items({ selectedSubcategory }: ItemsProps): JSX.Element {
       : products.filter(
           (product) => product.subcategory === selectedSubcategory
         );
+
+  if (filteredProductList.length === 0) {
+    setItemsDisplayed(false);
+  } else {
+    setItemsDisplayed(true);
+  }
   console.log(selectedSubcategory, filteredProductList);
   return (
     <div className="">
@@ -51,7 +60,7 @@ function Items({ selectedSubcategory }: ItemsProps): JSX.Element {
                   alt={product.name}
                   className="w-full h-64 object-cover my-4 p-4"
                 />
-                <p className="text-gray-600 flex text-center ">
+                <p className="text-gray-600 flex text-justify ">
                   {product.description}
                 </p>
                 <div className="flex flex-row justify-between my-4">

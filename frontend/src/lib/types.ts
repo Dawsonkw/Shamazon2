@@ -20,6 +20,7 @@ export type ProductApiResponse = {
 export type ItemsProps = {
   selectedSubcategory: string;
   setSelectedSubcategory: (subcategory: string) => void;
+  setItemsDisplayed: (display: boolean) => void;
 };
 
 export type FetchSingleProductResult = {

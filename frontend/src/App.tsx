@@ -6,9 +6,11 @@ import Item from "./components/item";
 import Items from "./components/items";
 import { useState } from "react";
 import GenericAlert from "./components/genericAlert";
+import Container from "./components/container";
 
 function App() {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("");
+  const [itemsDisplayed, setItemsDisplayed] = useState<boolean>(false);
 
   return (
     <Router>
@@ -16,30 +18,24 @@ function App() {
         <Header
           selectedSubcategory={selectedSubcategory}
           setSelectedSubcategory={setSelectedSubcategory}
+          setItemsDisplayed={setItemsDisplayed}
         />
 
         <Routes>
           <Route
             path="/"
             element={
-              <>
-                {/* <Hero /> */}
+              <Container>
+                {!itemsDisplayed && <Hero />}
                 <Items
                   selectedSubcategory={selectedSubcategory}
                   setSelectedSubcategory={setSelectedSubcategory}
+                  setItemsDisplayed={setItemsDisplayed}
                 />
-              </>
+              </Container>
             }
           />
-          <Route
-            path="/items"
-            element={
-              <Items
-                selectedSubcategory={selectedSubcategory}
-                setSelectedSubcategory={setSelectedSubcategory}
-              />
-            }
-          />
+
           <Route path="/item/:id" element={<Item />} />
 
           <Route path="*" element={<GenericAlert />} />
