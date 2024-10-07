@@ -14,7 +14,7 @@ function App() {
 
   return (
     <Router>
-      <div className="scrollbar-hide h-screen overflow-y-auto">
+      <div className="scrollbar-hide h-screen overflow-y-auto bg-gray-100">
         <Header
           selectedSubcategory={selectedSubcategory}
           setSelectedSubcategory={setSelectedSubcategory}

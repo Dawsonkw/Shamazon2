@@ -47,9 +47,7 @@ function Menupopover({
           className="text-white/70"
           width={24}
           height={24}
-          onClick={() => {
-            console.log("Open menu");
-          }}
+          onClick={() => {}}
         />
       </button>
 
@@ -58,6 +56,7 @@ function Menupopover({
           <Nav
             selectedSubcategory={selectedSubcategory}
             setSelectedSubcategory={setSelectedSubcategory}
+            setItemsDisplayed={(display) => setNavOpen(display)}
           />
         </div>
       )}
