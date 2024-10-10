@@ -13,7 +13,9 @@ function TopPicks() {
 
   return (
     <div className="my-4">
-      <h1 className="text-2xl font-bold mb-4 ml-4">Top Picks of the Week</h1>
+      <h1 className="text-2xl font-bold mb-4 ml-4">
+        Popular Items Of The Week
+      </h1>
       {topPicks.map((product) => (
         <div
           className="inline-block mx-4 max-w-fit hover:cursor-pointer"
