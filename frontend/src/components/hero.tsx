@@ -1,5 +1,4 @@
 import DealOfTheDay from "./dealOfTheDay";
-import InfoSection from "./infoSection";
 
 import TopPicks from "./topPicks";
 
@@ -14,7 +13,6 @@ function Hero() {
           </div>
           <div className="flex-row border border-black mt-4  h-[419px] my-8  bg-gradient-to-b from-purple-500 to-purple-800">
             <DealOfTheDay />
-            <InfoSection />
           </div>
         </div>
       </div>
