@@ -11,7 +11,7 @@ function Hero() {
           <div className="  max-h-[350px] my-8 mx-auto">
             <TopPicks />
           </div>
-          <div className="flex-row border border-black mt-4  h-[419px] my-8  bg-gradient-to-b from-purple-500 to-purple-800">
+          <div className="flex-row border border-black mt-4  h-[419px] my-8 bg-pattern-gradient ">
             <DealOfTheDay />
           </div>
         </div>
