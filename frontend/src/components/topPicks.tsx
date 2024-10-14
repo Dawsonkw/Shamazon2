@@ -12,7 +12,7 @@ function TopPicks() {
   const topPicks = [...productList].sort(() => Math.random() - 0.5).slice(0, 4);
 
   return (
-    <div className="my-4">
+    <div className="">
       <h1 className="text-2xl font-bold mb-4 ml-4">
         Popular Items Of The Week
       </h1>

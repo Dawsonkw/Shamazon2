@@ -4,49 +4,58 @@ import { useFetchProducts } from "../lib/hooks";
 function DealOfTheDay() {
   const { productList, loading, error } = useFetchProducts();
 
-  if (loading) return <p>Loading...</p>;
-
-  if (error) return <p>Error: {error}</p>;
+  if (loading)
+    return <p className="text-center text-lg font-semibold py-8">Loading...</p>;
+  if (error)
+    return (
+      <p className="text-center text-lg text-red-600 py-8">Error: {error}</p>
+    );
 
   const dealProduct = [...productList]
     .sort(() => Math.random() - 0.5)
     .slice(0, 1);
 
   return (
-    <div>
-      <div className="flex flex-row my-4 ">
+    <div className="container mx-auto px-4 py-8 ">
+      <div className="flex flex-col md:flex-row bg-pattern-gradient rounded-lg shadow-lg h-[585px]">
         <img
           src={dealOfTheDay}
           alt="Deal of the day"
-          style={{ height: "415px" }}
+          className="w-full md:w-1/2 h-auto object-cover"
         />
         {dealProduct.map((product) => (
           <div
-            className="inline-block my-4 max-w-fit hover:cursor-pointer"
             key={product.id}
+            className="w-full md:w-1/2 p-6 flex flex-col justify-between"
           >
-            <div className="flex flex-row gap-8">
-              <div className="flex justify-center">
+            <div className="bg-white rounded-t-lg p-6">
+              <div className="relative mb-4">
                 <img
                   src={product.imageUrl}
                   alt={product.name}
-                  style={{ width: "350px", height: "350px" }}
-                  className="absolute"
+                  className="w-full h-64 object-cover rounded-lg"
                 />
-                <p className="relative -bottom-1 left-1 text-lg font-bold rounded-lg bg-accent mt-2 px-2 max-h-8 ">
-                  Was {product.price}$, <span>Now on sale </span>
-                  {product.price && typeof product.price === "number"
-                    ? (product.price * 0.8).toFixed(2)
-                    : "N/A"}
-                  $
-                </p>
+                <div className="absolute bottom-2 right-2 bg-red-600 text-white text-sm font-bold rounded-full px-3 py-1">
+                  {((1 - (product.price * 0.8) / product.price) * 100).toFixed(
+                    0
+                  )}
+                  % OFF
+                </div>
               </div>
-              <div className="flex-col bg-white mx-4">
-                <h2 className="text-left">{product.name}</h2>
-                <p className="text-left">{product.brand}</p>
-                <p className="text-left text-wrap ">{product.description}</p>
-                <p className="text-left">{product.subcategory}</p>
-              </div>
+              <h2 className="text-2xl font-bold mb-2">{product.name}</h2>
+              <p className="text-gray-600 mb-2">{product.brand}</p>
+              <p className="text-gray-800 mb-4">{product.description}</p>
+            </div>
+            <div className="bg-white rounded-b-lg p-6">
+              <p className="text-2xl font-bold text-red-600 mb-2">
+                ${(product.price * 0.8).toFixed(2)}
+                <span className="text-lg font-normal text-gray-500 line-through ml-2">
+                  ${product.price}
+                </span>
+              </p>
+              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}
