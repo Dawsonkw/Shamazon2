@@ -1,8 +1,8 @@
 import { useFetchProducts } from "../lib/hooks";
 import { Link } from "react-router-dom";
 import { ItemsProps } from "../lib/types";
-// import PaginationControls from "./paginationControls";
-// import { itemsPerPage } from "../lib/constants";
+import PaginationControls from "./paginationControls";
+import { itemsPerPage } from "../lib/constants";
 
 function Items({
   selectedSubcategory,
@@ -13,16 +13,16 @@ function Items({
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  // // Pagination logic
-  // // const totalItems = productList.length;
-  // // const totalPages = Math.ceil(totalItems / itemsPerPage);
-  // // const indexOfLastItem = currentPage * itemsPerPage;
-  // // const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  // const currentItems = productList;
+  // Pagination logic
+  const totalItems = productList.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = productList;
 
-  // // const handlePageChange = (newPage: number) => {
-  // //   setCurrentPage(newPage);
-  // // };
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage);
+  };
 
   const products = productList;
 
@@ -88,11 +88,11 @@ function Items({
           ))}
         </ul>
         <div>
-          {/* <PaginationControls
+          <PaginationControls
             currentPage={currentPage}
             totalPages={totalPages}
             onPageChange={handlePageChange}
-          /> */}
+          />
         </div>
       </div>
     </div>
