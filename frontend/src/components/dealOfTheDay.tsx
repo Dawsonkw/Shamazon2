@@ -16,7 +16,7 @@ function DealOfTheDay() {
     .slice(0, 1);
 
   return (
-    <div className="container mx-auto px-4 py-8 ">
+    <div className="container mx-auto px-4 py-8 max-w-[1600px] ">
       <div className="flex flex-col md:flex-row bg-pattern-gradient rounded-lg shadow-lg h-[585px]">
         <img
           src={dealOfTheDay}
