@@ -7,6 +7,7 @@ import Items from "./components/items";
 import { useState } from "react";
 import GenericAlert from "./components/genericAlert";
 import Container from "./components/container";
+import Cart from "./components/cart";
 
 function App() {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("");
@@ -14,7 +15,7 @@ function App() {
 
   return (
     <Router>
-      <div className="scrollbar-hide h-screen overflow-y-auto bg-gray-100">
+      <div className="scrollbar-hide h-screen overflow-y-auto bg-gray-100 ">
         <Header
           selectedSubcategory={selectedSubcategory}
           setSelectedSubcategory={setSelectedSubcategory}
@@ -40,7 +41,9 @@ function App() {
 
           <Route path="*" element={<GenericAlert />} />
         </Routes>
-        <Footer />
+
+        <Cart />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
