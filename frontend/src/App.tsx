@@ -8,6 +8,7 @@ import { useState } from "react";
 import GenericAlert from "./components/genericAlert";
 import Container from "./components/container";
 import Cart from "./components/cart";
+import Login from "./components/login";
 
 function App() {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("");
@@ -42,7 +43,9 @@ function App() {
           <Route path="*" element={<GenericAlert />} />
         </Routes>
 
-        <Cart />
+        <Login />
+
+        {/* <Cart /> */}
         {/* <Footer /> */}
       </div>
     </Router>

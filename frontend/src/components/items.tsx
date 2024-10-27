@@ -14,15 +14,15 @@ function Items({
   if (error) return <p>Error: {error}</p>;
 
   // Pagination logic
-  const totalItems = productList.length;
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = productList;
+  // const totalItems = productList.length;
+  // const totalPages = Math.ceil(totalItems / itemsPerPage);
+  // const indexOfLastItem = currentPage * itemsPerPage;
+  // const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  // const currentItems = productList;
 
-  const handlePageChange = (newPage: number) => {
-    setCurrentPage(newPage);
-  };
+  // const handlePageChange = (newPage: number) => {
+  //   setCurrentPage(newPage);
+  // };
 
   const products = productList;
 
@@ -87,13 +87,7 @@ function Items({
             </li>
           ))}
         </ul>
-        <div>
-          <PaginationControls
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={handlePageChange}
-          />
-        </div>
+        <div></div>
       </div>
     </div>
   );

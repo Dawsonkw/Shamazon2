@@ -28,9 +28,3 @@ export type FetchSingleProductResult = {
   isLoading: boolean;
   error: string | null;
 };
-
-export type PaginationControlsProps = {
-  currentPage: number;
-  totalPages: number;
-  onPageChange: (newPage: number) => void;
-};
